@@ -4,6 +4,9 @@
   "main": "index.js",
   "scripts": {
   "start": "node server.js"
+},"engines": {
+  "node": "18.x",
+  "npm": "9.x"
 },
   "author": "",
   "license": "ISC",
