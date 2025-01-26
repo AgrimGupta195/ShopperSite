@@ -5,14 +5,14 @@ import cross_icon from '../../assets/cross_icon.png'
 const ListProduct = () => {
     const[allproducts,setAllProducts]=useState([]);
     const fetchinfo=async()=>{
-        await fetch('http://localhost:4000/allproducts').then((res)=>res.json()).then((data)=>{
+        await fetch('https://shoppersite.onrender.com/allproducts').then((res)=>res.json()).then((data)=>{
           setAllProducts(data)});
     }
     useEffect(()=>{
         fetchinfo();
     },[]);
     const remove_product=async(id)=>{
-      await fetch('http://localhost:4000/removeproduct',{
+      await fetch('https://shoppersite.onrender.com/removeproduct',{
         method:'POST',
         headers:{
           Accept:'application/json',
